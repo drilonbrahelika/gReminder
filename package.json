@@ -1,0 +1,28 @@
+{
+  "name": "greminder",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "repository": "github:drilonbrahelika/gReminder",
+  "description": "Chrome extension that shows a Google Meet-styled banner when 5 minutes remain in a scheduled call.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.ts",
+    "watch": "node scripts/build.ts --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test && npm run build",
+    "store:assets": "node scripts/store-assets.ts",
+    "store:zip": "npm run build && rm -f store/greminder-$npm_package_version.zip && cd dist && zip -qr -X ../store/greminder-$npm_package_version.zip ."
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "esbuild": "^0.28.2",
+    "happy-dom": "^21.0.4",
+    "typescript": "^5.9.0",
+    "vitest": "^5.0.5"
+  }
+}
