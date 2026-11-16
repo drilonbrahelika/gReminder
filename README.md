@@ -127,6 +127,10 @@ The reminder time choices live in `src/shared/settings.ts`. Other timing lives
 in `src/content/reminder.ts`: `LEAD_MS` (the 5 minute default),
 `URGENT_MS` (final minute) and `LINGER_MS` (how long "time is up" stays).
 
+## More from the author
+
+[AppDoorman](https://appdoorman.com) gives people app accounts from their Google Workspace groups, and takes them away when they leave.
+
 ## License
 
 MIT, see [LICENSE](LICENSE). Contributions are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
